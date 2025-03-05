@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Odin Project - Tic Tac Toe</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="rules">
+            <p>Player 1 = X</p>
+            <p>Player 2 = O</p>
+        </div>
+
+        <div class="game-container">
+            <div class="inputs">
+                <form action="#" id="playerForm">
+                    <div class="form-control">
+                        <label for="playerOneName">Player 1 Name:</label>
+                        <input type="text" name="playerOneName" id="playerOneName" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="playerTwoName">Player 2 Name:</label>
+                        <input type="text" name="playerTwoName" id="playerTwoName" required>
+                    </div>
+
+                    <input type="submit" value="Add Players">
+                </form>
+
+                <div id="buttonContainer">
+                    <button id="newGame">New Game</button>
+                    <button id="resetGame">Reset Score</button>
+                </div>
+
+                <div id="scores">
+                    <p class="winnerMessage"></p>
+                    <p class="">Player 1 Score: <span class="playerOneScore"></span></p>
+                    <p class="">Player 2 Score: <span class="playerTwoScore"></span></p>
+                </div>
+            </div>
+            <div class="game">
+                <div id="col0" class="game-col"></div>
+                <div id="col1" class="game-col"></div>
+                <div id="col2" class="game-col"></div>
+                <div id="col3" class="game-col"></div>
+                <div id="col4" class="game-col"></div>
+                <div id="col5" class="game-col"></div>
+                <div id="col6" class="game-col"></div>
+                <div id="col7" class="game-col"></div>
+                <div id="col8" class="game-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

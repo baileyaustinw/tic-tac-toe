@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+#rules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem 0;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game-col {
+    height: 25vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+    border-top: none;
+}
+
+.game-col:nth-child(3n+1) {
+    border-left: none;
+}
+
+.game-col:nth-child(n+7) {
+    border-bottom: none;
+}
+
+.marker {
+    font-size: 4rem;
+}
+
+#winnerModal {
+    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 30vh;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.7);
+}
+
+#modalText {
+    font-size: 2rem;
+}
+
+#buttonContainer, #scoreContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+#scoreContainer {
+    justify-items: center;
+}
+
+#newGame, #resetGame {
+    padding: 1rem;
+    background-color:dodgerblue;
+    border: solid 1px blue;
+    color: #fff;
+    border-radius: 8px;
+}
+
+#newGame:hover, #resetGame:hover {
+    cursor: pointer;
+}
+
+#resetGame {
+    background-color:tomato;
+    border: solid 1px red;
+}
+
+#playerForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+#playerForm > .form-control > input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-top: .33rem;
+    border-radius: 8px;
+    border: solid 1px rgba(0,0,0,.7);
+}
+
+#playerForm > input[type=submit] {
+    padding: 1rem;
+    background-color:chartreuse;
+    border: solid 1px green;
+    font-size: 1rem;
+}
+
+#playerForm > input[type=submit]:hover {
+    cursor: pointer;
+}
+
+#scores {
+    margin-top: 3rem;
+    font-size: 1.3rem;
+}
+
+#scores > p {
+    margin-top: 1.5rem;
+}
+
+.winnerMessage {
+    font-size: 2rem;
+    font-weight: 900;
+}
